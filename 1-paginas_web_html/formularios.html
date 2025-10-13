@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <h1>Formulários</h1>
+            <p>O formulário HTML é um formulário de preenchimento de dados ou que resulta em uma ação desejada utilizando a linguagem de marcação HTML. É formado por um ou mais campos. Esses campos podem ser de textos, caixas de seleção, botões, radio buttons e checkboxes utilizando tags do próprio HTML. Dessa forma, o usuário pode interagir com a página e executar ações através desses formulários.</p>
+        </header>
+        <section>
+            <h2>Elementos de um formulário</h2>
+            <ul>
+                <li>form: elemento principal que define o formulário.</li>
+                <li>input: utilizado para criar campos de entrada de dados, como texto, senha, email, etc.</li>
+                <li>textarea: utilizado para criar áreas de texto maiores, como comentários ou mensagens.</li>
+                <li>button: utilizado para criar botões, como enviar ou resetar o formulário.</li>
+                <li>select: utilizado para criar listas suspensas (dropdowns) com opções pré-definidas.</li>
+                <li>label: utilizado para associar um texto descritivo a um elemento de formulário.</li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h2>Exemplo de Formulário</h2>
+            <form action="/submit" method="post">
+                <label for="name">Nome:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Mensagem:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                <label for="gender">Gênero:</label><br>
+                <select id="gender" name="gender" required>
+                    <option value="male">Masculino</option>
+                    <option value="female">Feminino</option>
+                    <option value="other">Outro</option>    
+                </select><br><br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetar</button>
+            </form>
+    </body>
+</html>
