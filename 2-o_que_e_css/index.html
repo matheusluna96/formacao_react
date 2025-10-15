@@ -24,6 +24,23 @@
         li {
             margin-bottom: 5px;
         }
+
+        .flex {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        .item {
+            margin: 5px;
+            width: 80px;
+            height: 80px;
+            background-color: #4CAF50;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
@@ -40,5 +57,15 @@
     <h2>Caixas (Box Models)</h2>
     <p>Em uma página web, cada elemento é representado como um box retangular. Determinar o tamanho, propriedades - como sua cor, fundo, estilo das bordas - e a posição desses boxes é o objetivo do mecanismo de renderização.</p>
     <p>No CSS, cada um desses boxes retangulare é descrita usando o box model padrão. Este modelo descreve o conteúdo do espaço ocupado por um elemento. Cada box possui 4 edges: margin edge, border edge, padding edge e content edge.</p>
+    <h2>Flexbox</h2>
+    <p>O flexbox foi projetado tanto como um modelo de layout unidimensional quanto como um método capaz de organizar espacialmente os elementos em uma interface, além de possuir capacidades avançadas de alinhamento. Quando se descreve o flexbox como sendo unidimensional, enfatiza-se o fato de que ele lida com o layout em uma dimensão de cada vez - seja uma linha ou uma coluna.</p>
+    <h3>Os eixos do flexbox</h3>
+    <p>Para se utilizar o flexbox, é preciso ter em mente que todas as operações realizadas relacionam-se a dois eixos: o eixo principal e o eixo transversal. O eixo principal é definido através da propriedade <b>flex-direction</b> e o eixo transversal encontra-se na direção perpendicular a ele.</p>
+    <h4>Exemplo</h4>
+    <div class="flex">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+    </div>
 </body>
 </html>
